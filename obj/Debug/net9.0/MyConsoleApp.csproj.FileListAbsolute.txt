@@ -1,0 +1,14 @@
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\bin\Debug\net9.0\MyConsoleApp.exe
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\bin\Debug\net9.0\MyConsoleApp.deps.json
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\bin\Debug\net9.0\MyConsoleApp.runtimeconfig.json
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\bin\Debug\net9.0\MyConsoleApp.dll
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\bin\Debug\net9.0\MyConsoleApp.pdb
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.AssemblyInfoInputs.cache
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.AssemblyInfo.cs
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.dll
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\refint\MyConsoleApp.dll
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.pdb
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.genruntimeconfig.cache
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\ref\MyConsoleApp.dll
