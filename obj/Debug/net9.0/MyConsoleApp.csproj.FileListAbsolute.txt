@@ -12,3 +12,4 @@ C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net
 C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.pdb
 C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.genruntimeconfig.cache
 C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\ref\MyConsoleApp.dll
+C:\Users\yemre\OneDrive\Masaüstü\patika\Tasks\Task1\MyConsoleApp\obj\Debug\net9.0\MyConsoleApp.sourcelink.json
