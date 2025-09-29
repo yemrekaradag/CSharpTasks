@@ -7,54 +7,40 @@ class Program
 {
     static void Main(string[] args)
     {
-        ArrayList numbers = new ArrayList();
-        Console.Write("Enter 20 positive number: ");
+        Console.Write("Enter a sentence: ");
 
-        for (int i = 0; i < 20; i++)
+        string? input = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(input))
         {
-            string? input = Console.ReadLine();
-
-            if (!input.IsPositiveNumber())
-            {
-                Console.WriteLine("\nPlease enter a positive number.");
-                i--;
-                continue;
-            }
-
-            int n = int.Parse(input!);
-            numbers.Add(n);
+            Console.Write("This is not sentence.");
+            return;
         }
 
-        numbers.Sort();
-        int min1 = (int)numbers[0]!;
-        int min2 = (int)numbers[1]!;
-        int min3 = (int)numbers[2]!;
+        input.ToLower();
+        char[] vowels = { 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'ü' };
 
-        int max1 = (int)numbers[numbers.Count - 1]!;
-        int max2 = (int)numbers[numbers.Count - 2]!;
-        int max3 = (int)numbers[numbers.Count - 3]!;
+        char[] foundVowels = new char[input.Length];
+        int index = 0;
 
-        double avgMin = (min1 + min2 + min3) / 3.0;
-        double avgMax = (max1 + max2 + max3) / 3.0;
-        double avgTotal = avgMin + avgMax;
+        foreach (char c in input)
+        {
+            if (Array.Exists(vowels, letter => letter == c))
+            {
+                foundVowels[index] = c;
+                index++;
+            }
+        }
 
-        Console.WriteLine("\n--- Results ---");
-        Console.WriteLine($"Smallest 3 numbers: {min1}, {min2}, {min3}");
-        Console.WriteLine($"Largest 3 numbers: {max1}, {max2}, {max3}");
-        Console.WriteLine($"Average of smallest 3: {avgMin}");
-        Console.WriteLine($"Average of largest 3: {avgMax}");
-        Console.WriteLine($"Sum of averages: {avgTotal}");
-    }
-}
-static class Extensions
-{
-    public static bool IsPositiveNumber(this string? input)
-    {
-        if (string.IsNullOrWhiteSpace(input))
-            return false;
+        char[] result = new char[index];
+        Array.Copy(foundVowels, result, index);
 
-        bool isPositiveNumber = int.TryParse(input, out int number);
+        Array.Sort(result);
 
-        return isPositiveNumber && number > 0;
+        Console.WriteLine("\nVowels: ");
+        foreach (char h in result)
+        {
+            Console.Write(h + " ");
+        }
     }
 }
