@@ -7,8 +7,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        ArrayList primes = new ArrayList();
-        ArrayList nonPrimes = new ArrayList();
+        ArrayList numbers = new ArrayList();
         Console.Write("Enter 20 positive number: ");
 
         for (int i = 0; i < 20; i++)
@@ -23,37 +22,28 @@ class Program
             }
 
             int n = int.Parse(input!);
-            if (n.IsPrime())
-                primes.Add(n);
-            else
-                nonPrimes.Add(n);
+            numbers.Add(n);
         }
 
-        primes.Sort();
-        nonPrimes.Sort();
-        primes.Reverse();
-        nonPrimes.Reverse();
+        numbers.Sort();
+        int min1 = (int)numbers[0]!;
+        int min2 = (int)numbers[1]!;
+        int min3 = (int)numbers[2]!;
 
-        int primeTotal = 0;
-        int nonPrimeTotal = 0;
+        int max1 = (int)numbers[numbers.Count - 1]!;
+        int max2 = (int)numbers[numbers.Count - 2]!;
+        int max3 = (int)numbers[numbers.Count - 3]!;
 
-        foreach (int item in primes)
-        {
-            primeTotal += item;
-            Console.WriteLine($"Prime number: {item}");
-        }
+        double avgMin = (min1 + min2 + min3) / 3.0;
+        double avgMax = (max1 + max2 + max3) / 3.0;
+        double avgTotal = avgMin + avgMax;
 
-        foreach (int item in nonPrimes)
-        {
-            nonPrimeTotal += item;
-            Console.WriteLine($"Non prime number: {item}");
-        }
-
-        Console.WriteLine($"Prime count: {primes.Count}");
-        Console.WriteLine($"Prime Average: {primeTotal / primes.Count}");
-
-        Console.WriteLine($"Non prime count: {nonPrimes.Count}");
-        Console.WriteLine($"Non prime Average: {nonPrimeTotal / nonPrimes.Count}");
+        Console.WriteLine("\n--- Results ---");
+        Console.WriteLine($"Smallest 3 numbers: {min1}, {min2}, {min3}");
+        Console.WriteLine($"Largest 3 numbers: {max1}, {max2}, {max3}");
+        Console.WriteLine($"Average of smallest 3: {avgMin}");
+        Console.WriteLine($"Average of largest 3: {avgMax}");
+        Console.WriteLine($"Sum of averages: {avgTotal}");
     }
 }
 static class Extensions
@@ -66,20 +56,5 @@ static class Extensions
         bool isPositiveNumber = int.TryParse(input, out int number);
 
         return isPositiveNumber && number > 0;
-    }
-    public static bool IsPrime(this int n)
-    {
-        if (n < 2) return false;
-        if (n == 2) return true;
-        if (n % 2 == 0) return false;
-
-        int sqrt = (int)Math.Sqrt(n);
-        for (int i = 3; i <= sqrt; i += 2)
-        {
-            if (n % i == 0)
-                return false;
-        }
-
-        return true;
     }
 }
